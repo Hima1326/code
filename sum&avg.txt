@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(){
+int a ,b ,c,sum=0;
+float average;
+printf("enter a,b,c values");
+scanf("%d%d%d",&a,&b,&c);
+sum=a+b+c;
+average=sum/3;
+printf("the sum is %d", sum);
+printf("the average is %d", average);
+return 0;
+}
+
+
+

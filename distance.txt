@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main()
+{
+float s,u,a,t;
+printf("enter u,t,a values");
+scanf("%f%f%f",&u,&t,&a);
+s=(u*t)+1/2(a*+*t);
+printf("distance travelled by obj=%f",s);
+return 0;
+}

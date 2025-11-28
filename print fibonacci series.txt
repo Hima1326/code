@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int limit, a = 0, b = 1, next;
+
+    printf("Enter upper limit: ");
+    scanf("%d", &limit);
+
+    printf("Fibonacci series: %d %d ", a, b);
+
+    next = a + b;
+
+    while (next <= limit) {
+        printf("%d ", next);
+        a = b;
+        b = next;
+        next = a + b;
+    }
+
+    return 0;
+}

@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    FILE *fp;
+    char text[100];
+
+    fp = fopen("sample.txt", "w");
+    fprintf(fp, "Hello, this is a file example!");
+    fclose(fp);
+
+    fp = fopen("sample.txt", "r");
+    fgets(text, 100, fp);
+    printf("File Content: %s", text);
+    fclose(fp);
+
+    return 0;
+}
